@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.TeacherLeftPaneController">
+  <children>
+    <Button layoutX="79.0" layoutY="142.0" mnemonicParsing="false" onMouseClicked="#onClickDefineNewTask" text="Define new task" />
+    <Button layoutX="77.0" layoutY="371.0" mnemonicParsing="false" onMouseClicked="#onClickAbout" prefHeight="25.0" prefWidth="103.0" text="Teacher About" />
+    <Button layoutX="77.0" layoutY="110.0" mnemonicParsing="false" onMouseClicked="#onClickTeacherCourse" text="Teacher Courses" />
+  </children>
+</AnchorPane>

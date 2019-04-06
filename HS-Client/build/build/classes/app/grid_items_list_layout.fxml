@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="700.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+      <AnchorPane prefHeight="80.0" prefWidth="698.0" SplitPane.resizableWithParent="false">
+         <children>
+            <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="40.0" prefHeight="61.0" prefWidth="500.0" text="Student Courses" textFill="#246fe8">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+	<ScrollPane fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="561.0" prefViewportHeight="561.0" prefViewportWidth="630.0" prefWidth="630.0" SplitPane.resizableWithParent="false" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+   		<content>
+   		      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="630.0">
+         		<children>
+            		<Label fx:id="emptyLabel" layoutX="220.0" layoutY="250.0" text="Archive is Empty" textFill="#fc0303">
+            		      <font>
+					           <Font name="System Bold" size="25.0" />
+					      </font>
+					</Label>
+		      		<GridPane fx:id="folderGridPane" prefHeight="561.0" prefWidth="630.0" alignment="TOP_CENTER" gridLinesVisible="false">
+		        		<columnConstraints>
+		          			<ColumnConstraints hgrow="SOMETIMES" minWidth="133.0" prefWidth="133.0" />
+		          			<ColumnConstraints hgrow="SOMETIMES" minWidth="133.0" prefWidth="133.0" />
+		            		<ColumnConstraints hgrow="SOMETIMES" minWidth="133.0" prefWidth="133.0" />
+		
+		        		</columnConstraints>
+		        		<rowConstraints>
+		
+		        		</rowConstraints>
+		               <children>
+		
+		               </children>
+		      		</GridPane>
+		      	</children>
+		      </AnchorPane>
+   		</content>
+	</ScrollPane>
+  </items>
+</SplitPane>

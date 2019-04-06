@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.SemesterController">
+   <children>
+      <Label layoutX="69.0" layoutY="44.0" prefHeight="25.0" prefWidth="407.0" text="Open New Semester" textFill="#5b72e4">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Button layoutX="263.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#onConfirmClick" text="Create New Semester" />
+      <ComboBox fx:id="seasonsbox" layoutX="253.0" layoutY="184.0" prefWidth="150.0" />
+      <Label fx:id="currentSemesterLabel" layoutX="120.0" layoutY="130.0" prefHeight="43.0" prefWidth="379.0" text="Current Semester is #0 and is season Winter" wrapText="true" />
+   </children>
+</AnchorPane>

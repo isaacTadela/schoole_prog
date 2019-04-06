@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ShowUserInformationController">
+  <children>
+    <Label layoutX="82.0" layoutY="34.0" prefHeight="45.0" prefWidth="227.0" text="User Information" textFill="#2ea2eb">
+      <font>
+        <Font name="System Bold" size="25.0" />
+      </font>
+    </Label>
+    <Label layoutX="103.0" layoutY="102.0" text="Id:" />
+    <Label layoutX="103.0" layoutY="154.0" text="First Name:" />
+    <Label layoutX="103.0" layoutY="213.0" text="Last Name:" />
+    <Label layoutX="102.0" layoutY="273.0" text="Type:" />
+    <Label fx:id="userLabel" layoutX="208.0" layoutY="105.0" text="userId" />
+    <Label fx:id="pnameLabel" layoutX="208.0" layoutY="157.0" text="pname" />
+    <Label fx:id="fnameLabel" layoutX="208.0" layoutY="210.0" text="fname" />
+    <Label fx:id="typeLabel" layoutX="208.0" layoutY="270.0" text="type" />
+  </children>
+</AnchorPane>

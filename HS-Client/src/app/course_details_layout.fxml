@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="submissionButten" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.CourseDetailsController">
+   <children>
+      <Button layoutX="258.0" layoutY="485.0" mnemonicParsing="false" onMouseClicked="#onCourseTasksClick" text="Course Tasks" />
+      <Label layoutX="72.0" layoutY="25.0" prefHeight="73.0" prefWidth="256.0" text="Course:" textFill="#5878e4">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="98.0" text="Course num:" />
+      <Label layoutX="89.0" layoutY="137.0" text="Course name: " />
+      <Label layoutX="89.0" layoutY="178.0" text="Weekly hours: " />
+      <Label layoutX="89.0" layoutY="234.0" text="Grade:" />
+      <Label fx:id="note" alignment="TOP_LEFT" layoutX="82.0" layoutY="337.0" prefHeight="133.0" prefWidth="437.0" text="NotesBlock" />
+      <Label layoutX="89.0" layoutY="307.0" text="Notes:" />
+      <Label fx:id="courseNum" layoutX="211.0" layoutY="98.0" text="courseNum" />
+      <Label fx:id="courseName" layoutX="214.0" layoutY="137.0" text="courseName" />
+      <Label fx:id="weeklyHours" layoutX="214.0" layoutY="178.0" text="weeklyHours" />
+      <Label fx:id="grade" layoutX="214.0" layoutY="234.0" text="not evaluated yet." textFill="#ff1e00" />
+    <Button fx:id="editButton" layoutX="380.0" layoutY="270.0" mnemonicParsing="false" onAction="#onEditButtonClick" onMouseClicked="#onEditButtonClick" prefHeight="37.0" prefWidth="127.0" text="Edit evaluation " visible="false" />
+      <TextField fx:id="gradeTextFild" layoutX="187.0" layoutY="230.0" visible="false" />
+      <TextField fx:id="notesTextFild" layoutX="72.0" layoutY="338.0" prefHeight="133.0" prefWidth="437.0" visible="false" />
+      <Label layoutX="4.0" layoutY="178.0" prefHeight="17.0" prefWidth="632.0" text="*********12345678912345678912345678912345678912345678912345678912345678912345678912*" />
+   </children>
+</AnchorPane>

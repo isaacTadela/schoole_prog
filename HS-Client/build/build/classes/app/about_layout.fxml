@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea editable="false" layoutX="95.0" layoutY="102.0" prefHeight="565.0" prefWidth="455.0" text="This is Client Prototype for Assignment 2 for course &#10;Software Engineering Laboratory, is about comunicating&#10;with server and database for the High School Management &#10;Project and is made by Group 12 spring semester of 2017.&#10;group of:&#10;Amir&#10;Ayal&#10;Karim&#10;Saree&#10;Yetshak" />
+      <Label alignment="CENTER" layoutX="272.0" layoutY="30.0" prefHeight="52.0" prefWidth="97.0" text="About" textFill="#5173ee">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

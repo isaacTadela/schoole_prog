@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="570.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<!-- TODO Add Nodes -->
+	   <children>
+      <Label alignment="CENTER" layoutX="218.0" layoutY="32.0" prefHeight="52.0" prefWidth="205.0" text="Define Course" textFill="#5173ee">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font></Label>
+      <Label layoutX="125.0" layoutY="123.0" prefHeight="30.0" prefWidth="115.0" text="Course Num" />
+      <TextField fx:id="courseNum" layoutX="287.0" layoutY="119.0" onKeyReleased="#onSelectUnitClick" />
+	  <Label layoutX="129.0" layoutY="183.0" text="Course Name" />
+      <TextField fx:id="courseName" layoutX="287.0" layoutY="180.0" />
+      <Label layoutX="126.0" layoutY="245.0" text="Academic Unit" />
+      
+      <TextField fx:id="weeklyHours" layoutX="287.0" layoutY="300.0" />
+      <Label layoutX="125.0" layoutY="300.0" text="Weekly hours" />      
+      <Label layoutX="125.0" layoutY="360.0" text="Predecessor Courses" />
+      <Button layoutX="234.0" layoutY="469.0" mnemonicParsing="false" onMouseClicked="#onSubmitClick" text="Create Course" />
+      <Label layoutX="126.0" layoutY="420.0" text="Course Full Name:" />
+      <Label fx:id="fullCourseNameLabel" alignment="CENTER" layoutX="354.0" layoutY="420.0" text="unknown" textAlignment="CENTER" />
+      <MenuButton fx:id="courseChoiceBox" layoutX="286.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" text="Pick Courses">
+        <items>
+
+        </items>
+      </MenuButton>
+      <Label fx:id="warnLabel" alignment="CENTER" layoutX="150.0" layoutY="500.0" prefHeight="25.0" prefWidth="370.0" text="Wrong data" textAlignment="CENTER" textFill="RED" visible="false" />
+      <ComboBox fx:id="acaUnit" layoutX="287.0" layoutY="241.0" onAction="#onSelectUnitClick" onKeyReleased="#onSelectUnitClick" onMouseClicked="#onSelectUnitClick" onMouseEntered="#onSelectUnitClick" onMousePressed="#onSelectUnitClick" onMouseReleased="#onSelectUnitClick" onScrollFinished="#onSelectUnitClick" prefWidth="150.0" promptText="Acadmic units" />
+   </children>
+</AnchorPane>

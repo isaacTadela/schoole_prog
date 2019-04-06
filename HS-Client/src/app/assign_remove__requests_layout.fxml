@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.AssignRemoveRequestController">
+   <children>
+      <Label layoutX="170.0" layoutY="27.0" text="Assign/Remove requests" textFill="#6096e8">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="184.0" layoutY="125.0" prefHeight="21.0" prefWidth="80.0" text="User Id:" />
+      <TextField fx:id="userIdTextField" layoutX="277.0" layoutY="125.0" />
+      <Button layoutX="307.0" layoutY="428.0" mnemonicParsing="false" onMouseClicked="#onSendRequestClick" text="Send Request" />
+      <ComboBox fx:id="userTypeComboBox" layoutX="277.0" layoutY="186.0" prefWidth="150.0" />
+      <ComboBox fx:id="requestTypeComboBox" layoutX="277.0" layoutY="329.0" prefWidth="150.0" />
+      <ComboBox fx:id="courseInClassComboBox" layoutX="277.0" layoutY="256.0" prefWidth="150.0" />
+      <Label fx:id="warnLabel" layoutX="259.0" layoutY="400.0" prefHeight="17.0" prefWidth="186.0" text="you have to type Id" textFill="#ee0101" visible="false" />
+   </children>
+</AnchorPane>

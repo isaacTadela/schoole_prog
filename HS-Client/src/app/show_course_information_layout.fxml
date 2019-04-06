@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ShowCourseInformationController">
+  <children>
+    <Label layoutX="54.0" layoutY="27.0" prefHeight="73.0" prefWidth="256.0" text="Course Information:" textFill="#5878e4">
+      <font>
+        <Font name="System Bold" size="24.0" />
+      </font>
+    </Label>
+    <Label layoutX="72.0" layoutY="100.0" text="Course num:" />
+    <Label layoutX="72.0" layoutY="139.0" text="Course name: " />
+    <Label layoutX="71.0" layoutY="227.0" text="Weekly hours: " />
+    <Label fx:id="courseNum" layoutX="182.0" layoutY="100.0" text="courseNum" />
+    <Label fx:id="courseName" layoutX="183.0" layoutY="139.0" text="courseName" />
+    <Label fx:id="weeklyHours" layoutX="182.0" layoutY="227.0" text="weeklyHours" />
+    <Label layoutX="72.0" layoutY="182.0" text="Academic Unit:" />
+    <Label fx:id="aUnitLabel" layoutX="183.0" layoutY="182.0" text="aUnit" />
+    <TableView fx:id="predsTable" layoutX="129.0" layoutY="272.0" prefHeight="264.0" prefWidth="382.0">
+      <columns>
+        <TableColumn fx:id="predsColumn" prefWidth="381.0" text="Predecessor Courses" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>

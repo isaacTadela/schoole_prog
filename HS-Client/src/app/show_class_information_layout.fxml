@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ShowClassInformationController">
+  <children>
+    <Label layoutX="64.0" layoutY="27.0" prefHeight="73.0" prefWidth="256.0" text="Class Information:" textFill="#5878e4">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+    <Label layoutX="90.0" layoutY="100.0" text="Class Id:" />
+    <Label layoutX="90.0" layoutY="139.0" text="Class Name:" />
+    <Label fx:id="classNum" layoutX="211.0" layoutY="100.0" text="classNum" />
+    <Label fx:id="className" layoutX="212.0" layoutY="139.0" text="className" />
+    <TabPane layoutX="66.0" layoutY="175.0" prefHeight="355.0" prefWidth="457.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Student">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TableView fx:id="studentsTable" prefHeight="325.0" prefWidth="457.0">
+                  <columns>
+                    <TableColumn fx:id="studentsColumn" maxWidth="5000.0" minWidth="10.0" prefWidth="456.0" text="Students" />
+                  </columns>
+                </TableView>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Courses">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="417.0" prefWidth="551.0">
+              <children>
+                <TableView fx:id="courseTable" prefHeight="329.0" prefWidth="457.0">
+                  <columns>
+                    <TableColumn fx:id="courseColumn" prefWidth="233.0" text="Courses" />
+                    <TableColumn fx:id="semesterColumn" prefWidth="223.0" text="Semester Id" />
+                  </columns>
+                </TableView>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
