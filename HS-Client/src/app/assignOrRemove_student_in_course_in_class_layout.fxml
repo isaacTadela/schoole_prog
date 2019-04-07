@@ -27,10 +27,10 @@
          </effect>
       </Label>
       <Label layoutX="309.0" layoutY="131.0" text="Course" />
-      <Button layoutX="134.0" layoutY="305.0" mnemonicParsing="false" onAction="#onClickSubmitStudent" text="Assign Student &gt;&gt;" />
-      <TextField fx:id="studentIdField" layoutX="166.0" layoutY="252.0" prefHeight="25.0" prefWidth="84.0" />
       <ComboBox fx:id="classesList" layoutX="150.0" layoutY="127.0" onAction="#updateCoursesList" onMouseClicked="#updateCoursesList" prefHeight="25.0" prefWidth="124.0" />
       <ComboBox fx:id="coursesList" layoutX="369.0" layoutY="127.0" onAction="#updateStudentsList" prefHeight="25.0" prefWidth="124.0" AnchorPane.bottomAnchor="418.0" AnchorPane.leftAnchor="369.0" AnchorPane.rightAnchor="147.0" AnchorPane.topAnchor="127.0" />
+      <TextField fx:id="studentIdField" layoutX="166.0" layoutY="252.0" prefHeight="25.0" prefWidth="84.0" />
+      <Button layoutX="134.0" layoutY="305.0" mnemonicParsing="false" onAction="#onClickSubmitStudent" text="Assign Student &gt;&gt;" />
       <ListView fx:id="studentsInCourseInClass" layoutX="264.0" layoutY="182.0" prefHeight="272.0" prefWidth="243.0" />
       <Button layoutX="284.0" layoutY="472.0" mnemonicParsing="false" onAction="#onClickRemoveStudent" text="&lt;&lt; Remove Student" />
       <Label fx:id="warningMsg" layoutX="89.0" layoutY="347.0" prefHeight="106.0" prefWidth="156.0" textFill="#f82b2b" />

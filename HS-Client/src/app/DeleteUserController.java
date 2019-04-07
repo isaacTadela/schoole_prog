@@ -105,9 +105,9 @@ public class DeleteUserController implements Initializable,ControllerIF{
 		column3.setCellValueFactory(new PropertyValueFactory<>("pname"));	
 		column4.setCellValueFactory(new PropertyValueFactory<>("fname"));	
 				
-		column1.prefWidthProperty().bind(table.widthProperty().divide(6));
+		column1.prefWidthProperty().bind(table.widthProperty().divide(9));
 		column2.prefWidthProperty().bind(table.widthProperty().divide(4));
-		column3.prefWidthProperty().bind(table.widthProperty().divide(4));
+		column3.prefWidthProperty().bind(table.widthProperty().divide(3));
 		column4.prefWidthProperty().bind(table.widthProperty().divide(3));
 		
 		table.getColumns().add(column1);

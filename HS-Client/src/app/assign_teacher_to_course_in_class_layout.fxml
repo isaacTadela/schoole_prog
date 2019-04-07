@@ -14,10 +14,6 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.AssignTeacherToCourseInClass">
    <children>
-      <Button layoutX="220.0" layoutY="375.0" mnemonicParsing="false" onAction="#onClickAssignTeacherToCourse" text="Assign teacher to course in class" />
-      <ComboBox fx:id="classesList" layoutX="275.0" layoutY="147.0" onAction="#updateCoursesList" prefWidth="150.0" />
-      <ComboBox fx:id="coursesList" layoutX="275.0" layoutY="215.0" onAction="#updateTeachersList" prefWidth="150.0" />
-      <ComboBox fx:id="teachersList" layoutX="273.0" layoutY="271.0" prefWidth="150.0" />
       <Label layoutX="159.0" layoutY="153.0" text="Class" />
       <Label layoutX="159.0" layoutY="221.0" text="Course" />
       <Label layoutX="157.0" layoutY="277.0" text="New Teacher" />
@@ -36,5 +32,9 @@
       </Label>
       <Label fx:id="warningMsg" layoutX="69.0" layoutY="346.0" prefHeight="17.0" prefWidth="435.0" textFill="#ff2c2c" />
       <Label fx:id="currentTeacherLabel" layoutX="243.0" layoutY="307.0" prefHeight="17.0" prefWidth="210.0" textFill="#319e25" />
+      <ComboBox fx:id="classesList" layoutX="275.0" layoutY="147.0" onAction="#updateCoursesList" prefWidth="150.0" />
+      <ComboBox fx:id="coursesList" layoutX="275.0" layoutY="215.0" onAction="#updateTeachersList" prefWidth="150.0" />
+      <ComboBox fx:id="teachersList" layoutX="273.0" layoutY="271.0" prefWidth="150.0" />
+      <Button layoutX="220.0" layoutY="375.0" mnemonicParsing="false" onAction="#onClickAssignTeacherToCourse" text="Assign teacher to course in class" />
    </children>
 </AnchorPane>

@@ -31,6 +31,5 @@
     <Button fx:id="editButton" layoutX="380.0" layoutY="270.0" mnemonicParsing="false" onAction="#onEditButtonClick" onMouseClicked="#onEditButtonClick" prefHeight="37.0" prefWidth="127.0" text="Edit evaluation " visible="false" />
       <TextField fx:id="gradeTextFild" layoutX="187.0" layoutY="230.0" visible="false" />
       <TextField fx:id="notesTextFild" layoutX="72.0" layoutY="338.0" prefHeight="133.0" prefWidth="437.0" visible="false" />
-      <Label layoutX="4.0" layoutY="178.0" prefHeight="17.0" prefWidth="632.0" text="*********12345678912345678912345678912345678912345678912345678912345678912345678912*" />
    </children>
 </AnchorPane>

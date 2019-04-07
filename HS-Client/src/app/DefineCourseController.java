@@ -77,6 +77,10 @@ public class DefineCourseController implements Initializable,ControllerIF {
 						Main.openPopUpWithMessage("Adding course failed.",AlertType.ERROR);
 					}
 					
+					courseChoiceBox.getItems().clear();
+					String where = "";
+					Packet packet  = new Packet(PacketId.REQUIRE_ARRAY_LIST,PacketSub.DEFINE_COURSE_GET_COURSES,0,where);
+					Main.sendToServer(packet);
 				}
 			
 			}

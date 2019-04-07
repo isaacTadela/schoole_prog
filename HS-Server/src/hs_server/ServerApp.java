@@ -769,7 +769,7 @@ public class ServerApp extends AbstractServer  implements WindowListener
 				case DEFINE_NEW_CLASS:{
 
 					ArrayList<String> arr = (ArrayList<String>)pck.getData();
-					String data="'"+arr.get(0)+"'"+","+"'"+arr.get(1)+"'";
+					String data="'"+arr.get(0)+"'"+","+"'"+arr.get(1)+"','',''" ;
 					boolean isAdded=	dbController.insertItem(DatabaseTables.CLASS.getTable(),data );
 					pck.setNextStage();
 					pck.setData(isAdded);

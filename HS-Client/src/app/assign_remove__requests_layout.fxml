@@ -20,10 +20,10 @@
       </Label>
       <Label layoutX="184.0" layoutY="125.0" prefHeight="21.0" prefWidth="80.0" text="User Id:" />
       <TextField fx:id="userIdTextField" layoutX="277.0" layoutY="125.0" />
-      <Button layoutX="307.0" layoutY="428.0" mnemonicParsing="false" onMouseClicked="#onSendRequestClick" text="Send Request" />
-      <ComboBox fx:id="userTypeComboBox" layoutX="277.0" layoutY="186.0" prefWidth="150.0" />
-      <ComboBox fx:id="requestTypeComboBox" layoutX="277.0" layoutY="329.0" prefWidth="150.0" />
-      <ComboBox fx:id="courseInClassComboBox" layoutX="277.0" layoutY="256.0" prefWidth="150.0" />
       <Label fx:id="warnLabel" layoutX="259.0" layoutY="400.0" prefHeight="17.0" prefWidth="186.0" text="you have to type Id" textFill="#ee0101" visible="false" />
+      <ComboBox fx:id="userTypeComboBox" layoutX="277.0" layoutY="186.0" prefWidth="150.0" />
+      <ComboBox fx:id="courseInClassComboBox" layoutX="277.0" layoutY="256.0" prefWidth="150.0" />
+      <ComboBox fx:id="requestTypeComboBox" layoutX="277.0" layoutY="329.0" prefWidth="150.0" />
+      <Button layoutX="307.0" layoutY="428.0" mnemonicParsing="false" onMouseClicked="#onSendRequestClick" text="Send Request" />
    </children>
 </AnchorPane>
