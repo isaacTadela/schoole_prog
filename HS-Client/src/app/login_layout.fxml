@@ -29,6 +29,6 @@
       </font>
     </Label>
     <CheckBox fx:id="autoLogCheck" layoutX="222.0" layoutY="233.0" mnemonicParsing="false" text="Remember me each visit" />
-      <Button defaultButton="true" layoutX="258.0" layoutY="284.0" mnemonicParsing="false" onAction="#onSignInClick" onInputMethodTextChanged="#onSignInClick" onMouseClicked="#onSignInClick" prefHeight="37.0" prefWidth="120.0" text="Sign In" />
+      <Button defaultButton="true" layoutX="247.0" layoutY="315.0" mnemonicParsing="false" onAction="#onSignInClick" onInputMethodTextChanged="#onSignInClick" onMouseClicked="#onSignInClick" prefHeight="37.0" prefWidth="120.0" text="Sign In" />
   </children>
 </AnchorPane>
