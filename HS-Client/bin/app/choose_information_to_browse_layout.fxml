@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ObtainInformationController">
+   <children>
+      <Button layoutX="320.0" layoutY="147.0" mnemonicParsing="false" onMouseClicked="#onClickGetTeachers" text="Teachers" />
+      <Label layoutX="87.0" layoutY="40.0" prefHeight="60.0" prefWidth="264.0" text="View Information:" textFill="#4d6ad7">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="146.0" layoutY="190.0" mnemonicParsing="false" onMouseClicked="#onClickGetCourses" text="Courses" />
+      <Button layoutX="146.0" layoutY="229.0" mnemonicParsing="false" onMouseClicked="#onClickGetClasses" text="Classes" />
+      <Button layoutX="146.0" layoutY="147.0" mnemonicParsing="false" onMouseClicked="#onClickGetSemesters" text="Semesters" />
+      <Button layoutX="320.0" layoutY="190.0" mnemonicParsing="false" onMouseClicked="#onClickGetStudents" text="Students" />
+      <Button layoutX="320.0" layoutY="229.0" mnemonicParsing="false" onMouseClicked="#onClickGetParents" text="Parents" />
+      <Button layoutX="146.0" layoutY="269.0" mnemonicParsing="false" onMouseClicked="#onClickGetAcademicUnits" text="Academic Units" />
+   </children>
+</AnchorPane>

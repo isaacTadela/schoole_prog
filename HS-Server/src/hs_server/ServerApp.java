@@ -45,12 +45,12 @@ public class ServerApp extends AbstractServer  implements WindowListener
 {
 	//Class variables *************************************************
 	/**
-	 * The default port to listen on.
+	 * The default port to listen on.	
 	 */
 	final public static int DEFAULT_PORT = 5555;
 	final public static String INI_PATH = ".\\serverConfig.ini";
 
-	public static String DB_HOST = "jdbc:mysql://localhost/schooldb";
+	public static String DB_HOST = "jdbc:mysql://localhost/schooledb";
 	public static String DB_USER = "root";
 	public static String DB_PASSWORD = "123456";
 
@@ -330,6 +330,7 @@ public class ServerApp extends AbstractServer  implements WindowListener
 	public void handleMessageFromClient(Object msg, ConnectionToClient client)
 	{
 		//this.getClientConnections()
+		System.out.println("handleMessageFromClient in server line 333");
 		
 		if (msg instanceof Packet){
 			frame.setLastMessageLog("Server Recieved Packet: " + msg.toString());
@@ -1289,7 +1290,7 @@ public class ServerApp extends AbstractServer  implements WindowListener
 					}	
 					pck.setNextStage();
 					try {
-						System.out.println("server 1016...");
+						System.out.println("server 1293...");
 						client.sendToClient(pck);
 					} catch (IOException e) {
 						e.printStackTrace();

@@ -1,9 +1,5 @@
 package enums;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public enum PacketId {
 	 REQUIRE_BOOLEAN   (0),
 	 REQUIRE_INT   (1),

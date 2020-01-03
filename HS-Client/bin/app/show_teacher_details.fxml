@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ShowTeacherInformationController">
+  <children>
+    <Label layoutX="90.0" layoutY="27.0" prefHeight="42.0" prefWidth="271.0" text="Teacher Information" textFill="#2ea2eb">
+      <font>
+        <Font name="System Bold" size="25.0" />
+      </font>
+    </Label>
+    <Label layoutX="116.0" layoutY="102.0" text="Id:" />
+    <Label layoutX="116.0" layoutY="142.0" text="First Name:" />
+    <Label layoutX="118.0" layoutY="188.0" text="Last Name:" />
+    <Label layoutX="116.0" layoutY="231.0" text="Max Working Hours Allowed:" />
+    <Label layoutX="116.0" layoutY="282.0" text="Current Working Hours:" />
+    <Label fx:id="studentIdLabel" layoutX="304.0" layoutY="98.0" text="studentId" />
+    <Label fx:id="pnameLabel" layoutX="305.0" layoutY="139.0" text="pname" />
+    <Label fx:id="fnameLabel" layoutX="307.0" layoutY="185.0" text="fname" />
+    <Label fx:id="maxWorkingLabel" layoutX="304.0" layoutY="227.0" text="workingHours" />
+    <Label fx:id="currentWorkingLabel" layoutX="304.0" layoutY="278.0" text="currentWorkingHours" />
+    <TableView fx:id="academicUnitTable" layoutX="159.0" layoutY="351.0" prefHeight="176.0" prefWidth="331.0">
+      <columns>
+        <TableColumn fx:id="academicUnitColumn" prefWidth="330.0" text="Academic Units" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>

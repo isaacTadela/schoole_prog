@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.SystemManagerLeftPaneController">
+  <children>
+    <Button layoutX="58.0" layoutY="371.0" mnemonicParsing="false" onMouseClicked="#onClickAbout" text="System Manager About" />
+    <Button layoutX="77.0" layoutY="110.0" mnemonicParsing="false" onMouseClicked="#onClickDefineCourse" text="Define Course" />
+    <Button layoutX="83.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#onClickCreateUser" text="Create User" />
+    <Button layoutX="83.0" layoutY="180.0" mnemonicParsing="false" onMouseClicked="#onClickDeleteUser" text="Delete User" />
+  </children>
+</AnchorPane>

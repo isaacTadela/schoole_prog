@@ -59,7 +59,7 @@ public class LoginController implements Initializable, ControllerIF {
 			}
 			String where = "id = '" + usernameTextField.getText() + "' and password = '" + passwordTextField.getText()+"'";
 			Packet packet = new Packet(PacketId.REQUIRE_USER_ENTITY,PacketSub.LOGIN_CONTROLLER_GET_DATA,0,where);
-			System.out.println("login controller 62...");
+			System.out.println("login controller 62...Main.sendToServer packet" + packet );
 			Main.sendToServer(packet);	
 			
 		}
@@ -87,6 +87,7 @@ public class LoginController implements Initializable, ControllerIF {
 
 	@Override
 	public void onResponse(Object msg) {
+		System.out.println("login controller 90...onResponse");
 		if (msg instanceof Packet){
 			Packet pck = (Packet)msg;
 			if (pck.getPacketId() == PacketId.REQUIRE_USER_ENTITY){

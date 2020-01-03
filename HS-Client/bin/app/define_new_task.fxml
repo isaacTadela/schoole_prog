@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.DefineNewTask">
+   <children>
+      <Label layoutX="63.0" layoutY="27.0" prefHeight="46.0" prefWidth="260.0" text="Define New Task" textFill="#4da1fc">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="110.0" text="Course In Class">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="163.0" text="Task Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="220.0" text="Final Submission Date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="warningMsg" layoutX="146.0" layoutY="481.0" prefHeight="27.0" prefWidth="312.0" textFill="#ff0b0b" />
+      <ComboBox fx:id="courseInClassComboBox" layoutX="324.0" layoutY="111.0" prefWidth="150.0" />
+      <TextField fx:id="taskIdLabel" layoutX="324.0" layoutY="164.0" prefHeight="25.0" prefWidth="150.0" />
+      <DatePicker fx:id="finalDatePicker" layoutX="324.0" layoutY="221.0" />
+      <Button fx:id="addAttachmentButton" layoutX="324.0" layoutY="299.0" mnemonicParsing="false" onMouseClicked="#onClickedAddAttachment" text="Add Attachment" />
+      <Button layoutX="275.0" layoutY="364.0" mnemonicParsing="false" onMouseClicked="#onClickDefineTask" text="Upload" />
+   </children>
+</AnchorPane>

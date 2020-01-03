@@ -1,4 +1,5 @@
 package app;
+//package javafx11;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -131,14 +132,21 @@ public class Main extends Application {
 			public void run() {
 				if (root instanceof SplitPane){
 					try {
+						
+						//Parent child = FXMLLoader.load( getClass().getClassLoader().getResource("app/"+layoutPath) );						
 						Parent child = FXMLLoader.load(Main.class.getResource(layoutPath));
 						SplitPane sp = (SplitPane)root;
+						
 						if (sp.getItems().size() > 1){
 							Node node = sp.getItems().get(1);
 							showBackButton(node);
 							sp.getItems().remove(node);
 						}
 						sp.getItems().add(child);
+						
+
+						//sp.getItems().set(1, child); 
+						
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -340,6 +348,7 @@ public class Main extends Application {
 	 * this one will send the response from server to other controllers that actively wait response.
 	 */
 	public static void onResponse(Object message) {
+		System.out.println("main 344...onResponse");
 		if (message instanceof Packet){
 			Packet pck = (Packet)message;
 			if (pck.getPacketId() == PacketId.REQUIRE_BOOLEAN){
@@ -393,14 +402,16 @@ public class Main extends Application {
 	 */
 	public static void sendToServer(Object message) {
 		try {
-			System.out.println("main 395...");
+			System.out.println("main 398...befor sending "+ message);
 			client.sendToServer(message);
-			System.out.println("main 398...");
+			System.out.println("main 400...after sending");
 		} catch (IOException e) {
 			e.printStackTrace();
 			signalDisconnection();
 		}
 	}
+	
+	
 	/**
 	 * method that will run when server connection gets detected that it disconnected in order to reconnect.
 	 */
